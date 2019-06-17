@@ -24,3 +24,6 @@ production:
   <<: *default
   adapter: postgresql
   encoding: unicode
+  database: dvjvnb6qifo7j
+  username: gdnloznkfrvsgu
+  password: 8a18a22dd0480bb215064619bcfe2941fc514473ad1fd7c0d57a63a0bdd0491d
