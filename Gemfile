@@ -38,6 +38,8 @@ gem 'rails-i18n'
 gem 'jquery-rails'
 gem 'mini_racer'
 gem 'autoprefixer-rails', '8.6.5'
+gem 'devise'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
