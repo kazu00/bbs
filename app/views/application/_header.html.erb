@@ -17,7 +17,6 @@
           ユーザー
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <%# ユーザーがログインしている＝＞マイページを表示、していない＝＞登録やログインを表示する %>
           <% if @current_user %>
             <%= link_to 'マイページ', mypage_path, class: 'dropdown-item' %>
             <%= link_to 'ログアウト', logout_path, method: :delete, class: 'dropdown-item' %>

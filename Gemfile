@@ -40,6 +40,11 @@ gem 'mini_racer'
 gem 'autoprefixer-rails', '8.6.5'
 gem 'devise'
 
+# FBとTwitter認証に必要なgemを追加
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'dotenv-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -54,6 +59,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.8'
   gem 'rails-controller-testing'
   gem 'sqlite3'
+  gem 'dotenv-rails'
 end
 
 group :development do

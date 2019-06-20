@@ -16,7 +16,7 @@ class BoardsController < ApplicationController
       flash[:notice] = "「#{board.title}」の掲示板を作成しました"
       redirect_to board
     else
-        redirect_back fallback_location: new_board_path, flash: {
+      redirect_to :back, flash: {
         board: board,
         error_messages: board.errors.full_messages
       }
@@ -35,7 +35,7 @@ class BoardsController < ApplicationController
     if @board.update(board_params)
       redirect_to @board
     else
-        redirect_back fallback_location: edit_board_path, flash: {
+      redirect_to :back, flash: {
         board: @board,
         error_messages: @board.errors.full_messages
       }
